@@ -1,6 +1,6 @@
 <%
    if (session.getAttribute("name") == null){
-      response.sendRedirect("http://localhost:8080/ABC_Cinema/Login/login.jsp");
+      response.sendRedirect("http://localhost:8080/ABC_Cinema/register/login.jsp");
    }
 %>
 <!DOCTYPE html>

@@ -7,7 +7,6 @@ package com.abc.register;
 
 import com.abc.dbconnector.ConnectionProvider;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -36,7 +35,14 @@ public class Login extends HttpServlet {
       HttpSession session = request.getSession();
       RequestDispatcher dispatcher = null;   
       
-//      response.sendRedirect("user/profile.jsp");
+   if(upwd.equals(null) || uemail.equals("")){
+      session.setAttribute("status", "invalidEmail");
+      response.sendRedirect("register/login.jsp?status=invalidEmail");
+   }
+   if(upwd.equals(null) || upwd.equals("")){
+      session.setAttribute("status", "invalidUpwd");
+      response.sendRedirect("register/login.jsp?status=invalidUpwd");
+   }
       
       try {
           Connection con = ConnectionProvider.getCon();

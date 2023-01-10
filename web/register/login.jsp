@@ -63,8 +63,14 @@
    <script>
       var status = document.getElementById("status").value;
       if(status == "failed"){
-            swal("Sorry", "Wrong Username or Password", "error");        
-         }
+         swal("Sorry", "Wrong Username or Password", "error");        
+      }
+      else if(status == "invalidEmail"){
+         swal("Sorry", "Please enter your username", "error");        
+      }
+      else if(status == "invalidUpwd"){
+         swal("Sorry", "Please enter your password", "error");        
+      }
    </script>
    
   </body>

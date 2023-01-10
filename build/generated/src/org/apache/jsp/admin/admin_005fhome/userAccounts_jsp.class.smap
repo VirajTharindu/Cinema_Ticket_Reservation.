@@ -1,0 +1,17 @@
+SMAP
+userAccounts_jsp.java
+JSP
+*S JSP
+*F
++ 0 userAccounts.jsp
+admin/admin_home/userAccounts.jsp
+*L
+1,13:48
+13,43:61
+56,4:105
+59,2:109
+61,4:111,3
+65,3:123
+68,2:127
+69,7:129
+*E
