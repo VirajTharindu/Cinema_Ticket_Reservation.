@@ -1,4 +1,6 @@
-    :root{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+:root{
     --bk: black;
     --border: 2px solid var(--bd);
     --col2: #212134;
@@ -10,22 +12,20 @@
 
 @media (prefers-color-scheme: light)
 { 
-:root{
-    --bk: white;
-    --border: 2px solid var(--bd);
-    --col2: #e7e7f0;
-    --bd: white;
-    --cp: #161616;
-    --cp2: #181826;
-    --button: #0051bb;
-}
-
-
+   :root{
+       --bk: white;
+       --border: 2px solid var(--bd);
+       --col2: #e7e7f0;
+       --bd: white;
+       --cp: #161616;
+       --cp2: #181826;
+       --button: #0051bb;
+   }
 }
 
 * {
     color: var(--cp2);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.5rem;
     text-decoration: none;
 }
@@ -44,11 +44,12 @@ html {
     top: -1rem;
     padding: 0;
     width: 210px;
-    background-color: var(--col2);
+    background-color: black;
     height: 100vh;
     list-style: none;
     border-right: var(--border);
     border-width: 0;
+    background-image: linear-gradient(to left, #96938D, rgba(255,0,0,0) 100%);
 }
 
 p {
@@ -68,7 +69,7 @@ p {
 .text {
     margin: 0 .7rem;
 }
-
+/*
 button {
     background-color: var(--button);
     padding: .5rem 1rem;
@@ -78,7 +79,7 @@ button {
     border: 0;
     cursor: pointer;
     color: white;
-}
+}*/
 
 a {
     color: #54519e;
@@ -127,7 +128,7 @@ h1 {
 .menu li:hover {
     cursor: pointer;
     opacity: .7;
-    background-image: linear-gradient(90deg, #ED0800, rgba(255,0,0,0) 100%);
+    background-image: linear-gradient(90deg, black, rgba(255,0,0,0) 100%);
     outline: .1rem solid var(--bd);
     box-shadow: 5px 5px 10px black;
     transform: translate(1.2);
@@ -157,39 +158,37 @@ fieldset.info p {
     left: -5rem;
     top: 1rem;
     width: calc(100% + 5rem);
-
 }
 
-#datatable{
-   background-color: #787980;
-   border-spacing: 10px;
-   border-raduis: 10px;
+#datatable{  
+   border-spacing: 5px;
 }
-#datatable th, td{
+#datatable td{
     text-align: right;
 }
 #datatable th{
-   background-color: blue;
+   background-color: #FF7377;
    border-collapse: collapse;
    padding: 6px;
+   border: 2px solid black;
+   
 }
 #datatable th:nth-child(even) {
-   background-color:  #36c;
+   background-color:  #ED240C;
 }
 #datatable tr{
-   background-color: #787980;
-   border-collapse: collapse;
-   padding: 6px;
+   border-left: 10px solid black;
+   border-raduis: 5 px;
 }
 #datatable tr:hover{
-    background-color: #FA4616;
+    background-color: #FA4616;  
 }
 fieldset.info table {
     position: relative;
     left: -1rem;
     top: 1rem;
     width: 100%; 
-    border-collapse: collapse;
+    border-collapse: collapse;    
 }
 fieldset.info td {
     min-width: 100%;
@@ -198,6 +197,7 @@ fieldset.info td {
     border-radius: 5px;
     font-size: 1.2rem;
     text-align: right;
+    
 }
 fieldset.info tr {
     padding-top: .5rem;
@@ -216,7 +216,7 @@ fieldset .logo {
 
 }
 
-.coordonate {
+/*.coordonate {
     position: relative;
     border: var(--border);
     border-width: 0;
@@ -225,14 +225,16 @@ fieldset .logo {
     width: 350px;
     border-radius: 5px;
     margin: 1rem;
-
-}
+}*/
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
     align-items: stretch;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px white;
 }
 
 .container>* {

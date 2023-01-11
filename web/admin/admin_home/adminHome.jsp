@@ -1,3 +1,8 @@
+<%
+   if (session.getAttribute("name") == null){
+      response.sendRedirect("http://localhost:8080/ABC_Cinema/admin/adminLogin.jsp");
+   }
+%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,22 +12,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Home</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
     <ul class="menu">
 
-        <h1><img src="https://www.shareicon.net/data/256x256/2016/04/14/492851_admin_256x256.png"
+        <h1><img src="https://cdn.imgbin.com/21/4/22/imgbin-computer-icons-login-user-system-administrator-admin-L1LTfM47FsD3A2gus0rdy8WpJ.jpg"
                 alt="" width="40" style="border-radius: 10px;margin-left: 8px;margin-top: 1rem;"> </h1>
         <b class="b">ADMIN</b>
 <!--        <i class="i">Space</i>-->
         <hr>
         <div class="text">
             <li class="item" style="background-color: #AB263A"><a href="adminHome.jsp"><i class="fas fa-home"></i>Home</a></li>
-            <li class="item"><a href="userAccounts.jsp"><i class="fa fa-user" aria-hidden="true"></i>User's Accounts</a>
-            </li> 
-            <li class="item"><a href="userReviews.jsp"><i class="fa fa-comments" aria-hidden="true"></i></i>User Reviews</a></li> 
+            <li class="item"><a href="userAccounts.jsp"><i class="fa fa-user" aria-hidden="true"></i>User Accounts</a>
+            </li>
+            <li class="item"><a href="userReviews.jsp"><i class="fa fa-comments" aria-hidden="true"></i>Add Movies</a></li> 
+            <li class="item"><a href="userReviews.jsp"><i class="fa fa-comments" aria-hidden="true"></i>User Reviews</a></li> 
+            <li class="item" style="background-image: linear-gradient(to right, black, rgba(255,0,0,0)); border: 3px solid black;"><a href="../../AdminLogout"><i class='bx bx-log-out'></i> Logout</a></li> 
         </div>
     </ul>
 
@@ -59,10 +75,10 @@
         </fieldset>
 
         <div class="coordonate">
-            <h2><i class="fas fa-id-card" style="margin-right: 10px;"></i> ContactUs for dev</h2>
+            <h2><i class="fas fa-id-card" style="margin-right: 10px;"></i> Contact Us</h2>
             <p>
-                Please contact our dev taem. Our all member are studing at NSBM <br>
-                <a href="#">contact></a>
+                Please contact our dev team for more details.<br>
+                <a href="#">contact</a>
             </p>
             <br>
             <p>

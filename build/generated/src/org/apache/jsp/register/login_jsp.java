@@ -76,7 +76,8 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <li><a href=\"#AboutUs\">About Us</a></li>\r\n");
       out.write("        <li><a href=\"#ContactUs\">Contact Us</a></li>\r\n");
       out.write("      </ul>\r\n");
-      out.write("      <a href=\"login.jsp\" class=\"button\">Sign In</a>\r\n");
+      out.write("      <a href=\"../admin/adminLogin.jsp\" class=\"button\"><i class='bx bxs-shield bx-tada' ></i> ADMIN</a>\r\n");
+      out.write("      \r\n");
       out.write("    </header>\r\n");
       out.write("\r\n");
       out.write("    <div class=\"center\">\r\n");
@@ -99,6 +100,7 @@ public final class login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <div class=\"signup_link\">\r\n");
       out.write("          Not a member? <a href=\"register.jsp\">Signup</a>\r\n");
       out.write("        </div>\r\n");
+      out.write("        \r\n");
       out.write("      </form>\r\n");
       out.write("    </div>\r\n");
       out.write("    \r\n");

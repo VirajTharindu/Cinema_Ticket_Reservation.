@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Login</title>
-    <link rel="stylesheet" href="login.css" />
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="admin.css" />
 
     <link
       rel="stylesheet"
@@ -28,34 +29,33 @@
       <div class="bx bx-menu" id="menu-icon"></div>
       <ul class="navbar">
         <li><a href="http://localhost:8080/ABC_Cinema/home/home.jsp" class="">Home</a></li>
-        <li><a href="#AboutUs">About Us</a></li>
-        <li><a href="#ContactUs">Contact Us</a></li>
+        
       </ul>
-      <a href="../admin/adminLogin.jsp" class="button"><i class='bx bxs-shield bx-tada' ></i> ADMIN</a>
+      <a href="http://localhost:8080/ABC_Cinema/register/login.jsp" class="button">Login as an user</a>
       
     </header>
 
     <div class="center">
-      <h1>Login</h1>
-      <form method="post" action="../Login">
+      <h1>ADMIN</h1>
+      <form method="post" action="../AdminLogin">
         <div class="txt_field">
            <input type="text" name="username" required />
           <label
-            ><span><i class="bx bxs-user"></i></span> Username</label
+            ><span><i class="bx bxs-user"></i></span> Admin Username</label
           >
         </div>
         <div class="txt_field">
            <input type="password" name="password" required />
           <label
-            ><span><i class="bx bxs-lock-alt"></i></span> Password</label
+            ><span><i class="bx bxs-lock-alt"></i></span> Admin Password</label
           >
         </div>
         <div class="pass">Forgot Password?</div>
         <input type="submit" value="Login" />
-        <div class="signup_link">
+<!--        <div class="signup_link">
           Not a member? <a href="register.jsp">Signup</a>
         </div>
-        
+        -->
       </form>
     </div>
     

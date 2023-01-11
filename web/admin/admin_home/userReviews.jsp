@@ -37,7 +37,7 @@
          <hr>
          <div class="text">
             <li class="item" style="background-color: #AB263A"><a href="adminHome.jsp"><i class="fas fa-home"></i>Home</a></li>
-            <li class="item"><a href="userAccounts.jsp"><i class="fa fa-user" aria-hidden="true"></i></i>User's Accounts</a></li>
+            <li class="item"><a href="userAccounts.jsp"><i class="fa fa-user" aria-hidden="true"></i></i>User Accounts</a></li>
             <li class="item"><a href="userReviews.jsp"><i class="fa fa-comments" aria-hidden="true"></i>User Reviews</a></li>
          </div>
       </ul>
