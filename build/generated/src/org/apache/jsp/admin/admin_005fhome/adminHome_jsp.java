@@ -41,11 +41,22 @@ public final class adminHome_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write('\n');
 
-   if (session.getAttribute("name") == null){
+try {
+    response.addHeader("Cache-Control", "no-cache,no-store,private,must-revalidate,max-stale=0,post-check=0,pre-check=0"); 
+   response.addHeader("Pragma", "no-cache"); 
+   response.addDateHeader ("Expires", 0);
+    if (session.getAttribute("name") == null){
       response.sendRedirect("http://localhost:8080/ABC_Cinema/admin/adminLogin.jsp");
    }
+    else {}
+}
+catch(Exception ex) {
+    out.println(ex);
+}
 
+      out.write("\n");
       out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html lang=\"en\">\n");
@@ -71,7 +82,7 @@ public final class adminHome_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<body>\n");
       out.write("    <ul class=\"menu\">\n");
       out.write("\n");
-      out.write("        <h1><img src=\"https://cdn.imgbin.com/21/4/22/imgbin-computer-icons-login-user-system-administrator-admin-L1LTfM47FsD3A2gus0rdy8WpJ.jpg\"\n");
+      out.write("        <h1><img src=\"https://friconix.com/jpg/fi-snsuxx-user-shield-solid.jpg\"\n");
       out.write("                alt=\"\" width=\"40\" style=\"border-radius: 10px;margin-left: 8px;margin-top: 1rem;\"> </h1>\n");
       out.write("        <b class=\"b\">ADMIN</b>\n");
       out.write("<!--        <i class=\"i\">Space</i>-->\n");
@@ -80,9 +91,9 @@ public final class adminHome_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            <li class=\"item\" style=\"background-color: #AB263A\"><a href=\"adminHome.jsp\"><i class=\"fas fa-home\"></i>Home</a></li>\n");
       out.write("            <li class=\"item\"><a href=\"userAccounts.jsp\"><i class=\"fa fa-user\" aria-hidden=\"true\"></i>User Accounts</a>\n");
       out.write("            </li>\n");
-      out.write("            <li class=\"item\"><a href=\"userReviews.jsp\"><i class=\"fa fa-comments\" aria-hidden=\"true\"></i>Add Movies</a></li> \n");
+      out.write("            <li class=\"item\"><a href=\"updateMovies.jsp\"><i class=\"fa fa-film\" aria-hidden=\"true\"></i> Update Movies</a></li> \n");
       out.write("            <li class=\"item\"><a href=\"userReviews.jsp\"><i class=\"fa fa-comments\" aria-hidden=\"true\"></i>User Reviews</a></li> \n");
-      out.write("            <li class=\"item\" style=\"background-image: linear-gradient(to right, black, rgba(255,0,0,0)); border: 3px solid black;\"><a href=\"../AdminLogout\"><i class='bx bx-log-out'></i> Logout</a></li> \n");
+      out.write("            <li class=\"item\" style=\"background-image: linear-gradient(to right, black, rgba(255,0,0,0)); border: 3px solid black;\"><a href=\"../../AdminLogout\"><i class='bx bx-log-out'></i> Logout</a></li> \n");
       out.write("        </div>\n");
       out.write("    </ul>\n");
       out.write("\n");
@@ -100,7 +111,9 @@ public final class adminHome_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                \n");
       out.write("                <i class=\"fas fa-chart-line\"></i>\n");
       out.write("            </div>\n");
-      out.write("            <p>A warm welcome and lots of good wishes on becoming part of our growing team. <br> Congratulations and                 on behalf of all the members. We are all happy <br> and excited about your input and contribution to                  our company.</p>\n");
+      out.write("            <div>\n");
+      out.write("               <div\n");
+      out.write("            </div>\n");
       out.write("        </fieldset>\n");
       out.write("\n");
       out.write("        <fieldset class=\"info\">\n");
@@ -134,7 +147,11 @@ public final class adminHome_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("    </div>\n");
       out.write("</body>\n");
-      out.write("\n");
+      out.write("   <script type=\"text/javascript\">\n");
+      out.write("        function preventBack() { window.history.forward(); }\n");
+      out.write("        setTimeout(\"preventBack()\", 0);\n");
+      out.write("        window.onunload = function () { null };\n");
+      out.write("    </script>\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

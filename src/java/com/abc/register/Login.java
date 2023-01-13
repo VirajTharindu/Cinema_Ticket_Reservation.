@@ -53,7 +53,11 @@ public class Login extends HttpServlet {
           
           if(rs.next()){
               session.setAttribute("name", rs.getString("uname"));
-              response.sendRedirect("user/profile.jsp?name=rs.getString(\"uname\")");    
+              session.setAttribute("email", rs.getString("uemail"));
+              session.setAttribute("pwd", rs.getString("upwd"));
+              session.setAttribute("mobile", rs.getString("umobile"));
+              session.setAttribute("id", rs.getString("uid"));
+              response.sendRedirect("user/userprofile.jsp?name=rs.getString(\"uname\")");    
           }else{
              request.setAttribute("status", "failed");
              response.sendRedirect("register/login.jsp?status=failed");            

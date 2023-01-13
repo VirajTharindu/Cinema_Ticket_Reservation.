@@ -20,6 +20,18 @@
         <servlet-name>AdminLogout</servlet-name>
         <servlet-class>com.abc.admin.AdminLogout</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ForgotPassword</servlet-name>
+        <servlet-class>com.abc.register.ForgotPassword</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateMovies</servlet-name>
+        <servlet-class>com.abc.admin.UpdateMovies</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Reviews</servlet-name>
+        <servlet-class>com.abc.register.Reviews</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Logout</servlet-name>
         <url-pattern>/Logout</url-pattern>
@@ -39,6 +51,18 @@
     <servlet-mapping>
         <servlet-name>AdminLogout</servlet-name>
         <url-pattern>/AdminLogout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ForgotPassword</servlet-name>
+        <url-pattern>/ForgotPassword</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateMovies</servlet-name>
+        <url-pattern>/UpdateMovies</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Reviews</servlet-name>
+        <url-pattern>/Reviews</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

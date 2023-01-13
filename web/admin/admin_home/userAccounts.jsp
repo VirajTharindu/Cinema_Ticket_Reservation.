@@ -1,4 +1,8 @@
-
+<%
+   if (session.getAttribute("name") == null){
+      response.sendRedirect("http://localhost:8080/ABC_Cinema/admin/adminLogin.jsp");
+   }
+%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="com.abc.dbconnector.ConnectionProvider"%>
 <%@page import="java.sql.Statement"%>
@@ -36,11 +40,14 @@
          <b class="b">ADMIN</b>
          <i class="i"></i>
          <hr>
-         <div class="text">
+               <div class="text">
             <li class="item" style="background-color: #AB263A"><a href="adminHome.jsp"><i class="fas fa-home"></i>Home</a></li>
-            <li class="item active"><a href="userAccounts.jsp"><i class="fa fa-user" aria-hidden="true"></i></i>User Accounts</a></li>
-            <li class="item"><a href="userReviews.jsp"><i class="fa fa-comments" aria-hidden="true"></i></i>User Reviews</a></li>
-         </div>
+            <li class="item"><a href="userAccounts.jsp"><i class="fa fa-user" aria-hidden="true"></i>User Accounts</a>
+            </li>
+            <li class="item"><a href="updateMovies.jsp"><i class="fa fa-film" aria-hidden="true"></i> Update Movies</a></li> 
+            <li class="item"><a href="userReviews.jsp"><i class="fa fa-comments" aria-hidden="true"></i>User Reviews</a></li> 
+            <li class="item" style="background-image: linear-gradient(to right, black, rgba(255,0,0,0)); border: 3px solid black;"><a href="../../AdminLogout"><i class='bx bx-log-out'></i> Logout</a></li> 
+        </div>
       </ul>
 
       <br>
@@ -81,5 +88,9 @@
             </table>
       </div>
    </body>
-
+<script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
 </html>

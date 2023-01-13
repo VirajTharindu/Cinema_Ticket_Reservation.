@@ -1,8 +1,19 @@
+
 <%
-   if (session.getAttribute("name") == null){
+try {
+    response.addHeader("Cache-Control", "no-cache,no-store,private,must-revalidate,max-stale=0,post-check=0,pre-check=0"); 
+   response.addHeader("Pragma", "no-cache"); 
+   response.addDateHeader ("Expires", 0);
+    if (session.getAttribute("name") == null){
       response.sendRedirect("http://localhost:8080/ABC_Cinema/admin/adminLogin.jsp");
    }
+    else {}
+}
+catch(Exception ex) {
+    out.println(ex);
+}
 %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +38,7 @@
 <body>
     <ul class="menu">
 
-        <h1><img src="https://cdn.imgbin.com/21/4/22/imgbin-computer-icons-login-user-system-administrator-admin-L1LTfM47FsD3A2gus0rdy8WpJ.jpg"
+        <h1><img src="https://friconix.com/jpg/fi-snsuxx-user-shield-solid.jpg"
                 alt="" width="40" style="border-radius: 10px;margin-left: 8px;margin-top: 1rem;"> </h1>
         <b class="b">ADMIN</b>
 <!--        <i class="i">Space</i>-->
@@ -36,7 +47,7 @@
             <li class="item" style="background-color: #AB263A"><a href="adminHome.jsp"><i class="fas fa-home"></i>Home</a></li>
             <li class="item"><a href="userAccounts.jsp"><i class="fa fa-user" aria-hidden="true"></i>User Accounts</a>
             </li>
-            <li class="item"><a href="userReviews.jsp"><i class="fa fa-comments" aria-hidden="true"></i>Add Movies</a></li> 
+            <li class="item"><a href="updateMovies.jsp"><i class="fa fa-film" aria-hidden="true"></i> Update Movies</a></li> 
             <li class="item"><a href="userReviews.jsp"><i class="fa fa-comments" aria-hidden="true"></i>User Reviews</a></li> 
             <li class="item" style="background-image: linear-gradient(to right, black, rgba(255,0,0,0)); border: 3px solid black;"><a href="../../AdminLogout"><i class='bx bx-log-out'></i> Logout</a></li> 
         </div>
@@ -56,7 +67,9 @@
                 
                 <i class="fas fa-chart-line"></i>
             </div>
-            <p>A warm welcome and lots of good wishes on becoming part of our growing team. <br> Congratulations and                 on behalf of all the members. We are all happy <br> and excited about your input and contribution to                  our company.</p>
+            <div>
+               <div
+            </div>
         </fieldset>
 
         <fieldset class="info">
@@ -90,5 +103,9 @@
 
     </div>
 </body>
-
+   <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
 </html>

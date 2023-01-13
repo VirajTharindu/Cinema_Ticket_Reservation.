@@ -1,0 +1,18 @@
+SMAP
+userReviews_jsp.java
+JSP
+*S JSP
+*F
++ 0 userReviews.jsp
+admin/admin_home/userReviews.jsp
+*L
+2,4:49
+5,13:53
+17,50:66
+67,4:117
+70,2:121
+72,4:123,3
+76,3:135
+79,2:139
+80,7:141
+*E
