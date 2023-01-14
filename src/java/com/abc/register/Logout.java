@@ -16,9 +16,10 @@ import javax.servlet.http.HttpSession;
 public class Logout extends HttpServlet {
   @Override
    protected void doGet(HttpServletRequest request, HttpServletResponse response)
-           throws ServletException, IOException {
+           throws ServletException, IOException {  
      HttpSession session = request.getSession();
-     session.invalidate();
+     session.invalidate();     
      response.sendRedirect("register/login.jsp");
+     return;
    }   
 }

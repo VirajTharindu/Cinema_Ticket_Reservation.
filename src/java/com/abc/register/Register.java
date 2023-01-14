@@ -14,6 +14,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -33,8 +34,15 @@ public class Register extends HttpServlet {
        String upwd = request.getParameter("pwd");
        String uemail = request.getParameter("email");
        String umobile = request.getParameter("contact");
+       HttpSession session = request.getSession();
        Connection con = null;
-       response.setContentType("jsp");
+//       response.setContentType("jsp");
+
+      if(upwd.equals(null) || uemail.equals("")){
+         session.getAttribute(uname);
+         response.sendRedirect("register/login.jsp?status=invalidEmail");
+      }
+
 
        try{
          con = ConnectionProvider.getCon();

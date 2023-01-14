@@ -7,7 +7,6 @@ package com.abc.register;
 
 import com.abc.dbconnector.ConnectionProvider;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -36,7 +35,14 @@ public class Login extends HttpServlet {
       HttpSession session = request.getSession();
       RequestDispatcher dispatcher = null;   
       
-//      response.sendRedirect("user/profile.jsp");
+   if(upwd.equals(null) || uemail.equals("")){
+      session.setAttribute("status", "invalidEmail");
+      response.sendRedirect("register/login.jsp?status=invalidEmail");
+   }
+   if(upwd.equals(null) || upwd.equals("")){
+      session.setAttribute("status", "invalidUpwd");
+      response.sendRedirect("register/login.jsp?status=invalidUpwd");
+   }
       
       try {
           Connection con = ConnectionProvider.getCon();
@@ -47,7 +53,11 @@ public class Login extends HttpServlet {
           
           if(rs.next()){
               session.setAttribute("name", rs.getString("uname"));
-              response.sendRedirect("user/profile.jsp?name=rs.getString(\"uname\")");    
+              session.setAttribute("email", rs.getString("uemail"));
+              session.setAttribute("pwd", rs.getString("upwd"));
+              session.setAttribute("mobile", rs.getString("umobile"));
+              session.setAttribute("id", rs.getString("uid"));
+              response.sendRedirect("user/userprofile.jsp?name=rs.getString(\"uname\")");    
           }else{
              request.setAttribute("status", "failed");
              response.sendRedirect("register/login.jsp?status=failed");            
