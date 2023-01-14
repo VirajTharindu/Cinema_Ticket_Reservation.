@@ -228,13 +228,13 @@
          </div>
       </section>
 
-      <section class="reviews">
+<!--      <section class="reviews">
          <div class="reviews-box">
             <h1>
                Reviews<span><i class="bx bxs-chevrons-right"></i></span>
             </h1>
          </div>
-      </section>
+      </section>-->
 
       <!-- Footer -->
       <section class="footer">

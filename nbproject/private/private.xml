@@ -3,11 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/G:/My%20Work/ABC_Cinema/web/admin/admin_home/addUsers.jsp</file>
-            <file>file:/G:/My%20Work/ABC_Cinema/web/admin/admin_home/style.css</file>
-            <file>file:/G:/My%20Work/ABC_Cinema/web/admin/admin_home/userReviews.jsp</file>
-            <file>file:/G:/My%20Work/ABC_Cinema/web/admin/admin_home/userAccounts.jsp</file>
-            <file>file:/G:/My%20Work/ABC_Cinema/web/admin/admin_home/adminHome.jsp</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/movies/now-playing/JohnWick.jsp</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/bookings/booking.jsp</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/movies/now-playing/movies.css</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/bookings/style.css</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/bookings/seat.jsp</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/bookings/script.js</file>
         </group>
     </open-files>
 </project-private>
