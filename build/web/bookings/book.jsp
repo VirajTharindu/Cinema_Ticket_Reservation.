@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Register Page</title>
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="book.css" />
 
     <link
       rel="stylesheet"
@@ -14,6 +14,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"  
     />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+            <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" ></script>
     
     <style>
        
@@ -38,44 +43,47 @@
       <a href="login.jsp" class="button">Sign In</a>
     </header>
     <div class="center">
-      <h1>Register</h1>
-      <form method="post" action="../Register" style="margin-top: -10px;">
-        <div class="txt_field">
-          <input type="text" name="name" required />
-          <label
-            ><span><i class="bx bxs-user"></i></span> Username</label
-          >
-        </div>
-        <div class="txt_field">
-          <input type="password" name="pwd" required />
-          <label
-            ><span><i class="bx bxs-lock-alt"></i></span> Password</label
-          >
-        </div>
-        <div class="txt_field">
-          <input type="password" name="re_pwd" required />
-          <label
-            ><span><i class="bx bxs-lock-alt"></i></span> Re-enter your
-            password</label
-          >
-        </div>
+      <h1>Book</h1>
+      <form method="post" action="../Book" style="margin-top: -10px;">
         <div class="txt_field">
           <input type="email" name="email" required />
-
           <label
             ><span><i class="bx bxs-envelope"></i></span> Email</label
           >
         </div>
-         <div class="txt_field">
-          <input type="text" name="contact" required />
-
+        <div class="txt_field">
+          <input type="text" name="name" required />
           <label
-            ><span><i class='bx bx-mobile'></i></span> Contact Number</label
+            ><span><i class="bx bxs-star"></i></span> Name</label
           >
         </div>
-         <div class="signup_link">
+        <div class="txt_field">
+           <select class="movie" name="movies">
+              <option value="12">Spider-Man ($12)</option>
+              <option value="10">Oppenheimer ($10)</option>
+              <option value="9">Transformers ($9)</option>
+              <option value="8">Pathaan ($8)</option>
+              <option value="7">John Wick ($7)</option>              
+           </select>
+          <label style="padding-bottom: 55px; "  
+             ><span><i class="bx bxs-movie"></i></span> Select a Movie<br> </label
+          >
+        </div>
+        <div class="txt_field">
+           <input type="text" id="datepicker"  name="date"/>
+          <label
+             ><span><i class="bx bxs-calendar"></i></span> Select a Date<br> </label
+          >
+        </div>
+         <div class="txt_field">
+          <input type="number" name="seat" min="1" max="30" required />
+          <label
+            ><span><i class='bx bx-chair bx-flip-horizontal' ></i></span> Seats</label
+          >
+        </div>
+<!--         <div class="signup_link">
           Already Registered ? <a href="login.jsp">Sign In</a>
-         </div>
+         </div>-->
         <input type="submit" value="Continue" onclick="fun()" />      
       </form>
     </div>
@@ -91,5 +99,15 @@
          swal("Congrats", "Account created successfully", "success"); 
       }
    </script>-->
+<script>
+   $(function () {
+                $("#datepicker").datepicker({
+                    beforeShowDay: function (d) {
+                        var day = d.getDay();
+                        return [day != 0 && day != 5 && day != 6 && day != 7];
+                    },
+                });
+            });</script>
+
   </body>
 </html>

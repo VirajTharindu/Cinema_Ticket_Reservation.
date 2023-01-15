@@ -32,6 +32,14 @@
         <servlet-name>Reviews</servlet-name>
         <servlet-class>com.abc.register.Reviews</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Book</servlet-name>
+        <servlet-class>com.abc.book.Book</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddToDB</servlet-name>
+        <servlet-class>com.abc.book.AddToDB</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Logout</servlet-name>
         <url-pattern>/Logout</url-pattern>
@@ -63,6 +71,14 @@
     <servlet-mapping>
         <servlet-name>Reviews</servlet-name>
         <url-pattern>/Reviews</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Book</servlet-name>
+        <url-pattern>/Book</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddToDB</servlet-name>
+        <url-pattern>/AddToDB</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

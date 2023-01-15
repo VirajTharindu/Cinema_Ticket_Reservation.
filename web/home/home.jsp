@@ -39,7 +39,7 @@
                   <span></span>
                   <h1>John Wick :<br />Chapter 4</h1>
                   <br />
-                  <a href="#" class="button">Book Now</a>
+                  <a href="../bookings/book.jsp" class="button">Book Now</a>
                   <a href="#" class="play">
                      <i class="bx bx-play"></i>
                   </a>
@@ -54,7 +54,7 @@
                      Rise of the Beasts
                   </h1>
                   <br />
-                  <a href="#" class="button">Book Now</a>
+                  <a href="../bookings/book.jsp" class="button">Book Now</a>
                   <a href="#" class="play">
                      <i class="bx bx-play"></i>
                   </a>
@@ -66,7 +66,7 @@
                   <span></span>
                   <h1>Oppenheimer</h1>
                   <br />
-                  <a href="#" class="button">Book Now</a>
+                  <a href="../bookings/book.jsp" class="button">Book Now</a>
                   <a href="#" class="play">
                      <i class="bx bx-play"></i>
                   </a>
@@ -78,7 +78,7 @@
                   <span></span>
                   <h1>Pathaan</h1>
                   <br />
-                  <a href="#" class="button">Book Now</a>
+                  <a href="../bookings/book.jsp" class="button">Book Now</a>
                   <a href="#" class="play">
                      <i class="bx bx-play"></i>
                   </a>
