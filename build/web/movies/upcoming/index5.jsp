@@ -36,17 +36,16 @@
         
                 <!-- Navbar -->
     <header>
-      <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Movies </a>
+      <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
 
-      <div class="bx bx-menu" id="menu-icon"></div>
-      <ul class="navbar">
-        <li><a href="/Home/home.html" class="home-active">Home</a></li>
-        <li><a href="#AboutUs">About Us</a></li>
-        <li><a href="#ContactUs">Contact Us</a></li>
-      </ul>
-      <a href="#" class="button">Sign In</a>
-      
-      
+         <div class="bx bx-menu" id="menu-icon"></div>
+         <ul class="navbar">
+            <li><a href="/../ABC_Cinema/home/home.jsp" class="home-active">Home</a></li>
+           <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="#ContactUs">Contact Us</a></li>
+            <li style="background-color: orange; padding: 5px;border-radius: 5px;"><a href="../../user_review/review.jsp"><i class='bx bxs-star bx-flashing' ></i> Review</a></li>
+         </ul>
+         <a href="http://localhost:8080/ABC_Cinema/register/login.jsp" class="button">Sign In</a>
     </header>
     <section class="home swiper" id="home">
       <div class="swiper-wrapper">

@@ -4,11 +4,11 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>Spider-Man</title>
 
       <link
          rel="stylesheet"
-         href="Assets/styles/movies.css"
+         href="movies.css"
          />
       <!-- CSS only -->
       <!-- JavaScript Bundle with Popper -->
@@ -29,27 +29,28 @@
    <body>
       <!-- Navbar -->
       <header>
-         <a href="" class="logo"> <i class="bx bxs-movie"></i>Movies </a>
+         <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
 
          <div class="bx bx-menu" id="menu-icon"></div>
          <ul class="navbar">
-            <li><a href="/../ABC_Cinema/home/home.jsp" class="home-active">Movies</a></li>
-            <li><a href="#AboutUs">About Us</a></li>
+            <li><a href="/../ABC_Cinema/home/home.jsp" class="home-active">Home</a></li>
+           <li><a href="#AboutUs">About Us</a></li>
             <li><a href="#ContactUs">Contact Us</a></li>
+            <li style="background-color: orange; padding: 5px;border-radius: 5px;"><a href="../../user_review/review.jsp"><i class='bx bxs-star bx-flashing' ></i> Review</a></li>
          </ul>
-         <a href="#" class="button">Sign In</a>
+         <a href="http://localhost:8080/ABC_Cinema/register/login.jsp" class="button">Sign In</a>
       </header>
       <section class="home swiper" id="home">
          <div class="swiper-wrapper">
             <div class="swiper-slide container">
                <img
-                  src="Assets/images/oppenheimer/O1.jpg"
+                  src="Assets/images/spider man/sm1.jpg"
                   alt=""
                   srcset=""
                   />
                <div class="home-text">
-                  <span></span>
-                  <h1>Oppenheimer</h1>
+                  <span>Marvel Universe</span>
+                  <h1>Spider-Man: Across the Spider-Verse</h1>
                   <h3 class="genre">Action | Adventure | Thriller</h3>
                   <br />
                   <a href="#" class="button">Book Now</a>
@@ -57,7 +58,7 @@
             </div>
             <div class="swiper-slide container">
                <img
-                  src="Assets/images/oppenheimer/O2.png"
+                  src="Assets/images/spider man/sm2.lpg.jpg"
                   alt=""
                   srcset=""
                   id="second-slide"
@@ -78,8 +79,13 @@
             <h1 class="heading">Storyline</h1>
             <div class="story">
                <span>
-                  The story of American scientist J. Robert Oppenheimer and his role
-                  in the development of the atomic bomb.
+                  After reuniting with Gwen Stacy, Brooklyn's full-time, friendly
+                  neighborhood Spider-Man is catapulted across the Multiverse, where
+                  he encounters a team of Spider-People charged with protecting its
+                  very existence. However, when the heroes clash on how to handle a
+                  new threat, Miles finds himself pitted against the other Spiders. He
+                  must soon redefine what it means to be a hero so he can save the
+                  people he loves most.
                </span>
             </div>
             <div class=""></div>
@@ -93,25 +99,45 @@
                <div class="swiper-wrapper">
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="images/Ocast1.jpg" alt="" id="" />
+                        <img src="Assets/images/spider man/smcast1.jpg" alt="" id="" />
                      </div>
-                     <h4>Cillian Murphy</h4>
+                     <h4>Hailee Steinfeld</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img
-                           src="Assets/images/oppenheimer/Ocast2.jpg"
-                           alt=""
-                           id=""
-                           />
+                        <img src="Assets/images/spider man/smcast2.jpg" alt="" id="" />
                      </div>
-                     <h4>Emily Blunt</h4>
+                     <h4>Oscar Isaac</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="images/Ocast3.jpg" alt="" id="" />
+                        <img src="Assets/images/spider man/smcast3.jpg" alt="" id="" />
                      </div>
-                     <h4>Matt Damon</h4>
+                     <h4>Shameik Moore</h4>
+                  </div>
+                  <div class="swiper-slide box">
+                     <div class="box-img">
+                        <img src="Assets/images/spider man/smcast4.jpg" alt="" id="" />
+                     </div>
+                     <h4>Brian Tyree Henry</h4>
+                  </div>
+                  <div class="swiper-slide box">
+                     <div class="box-img">
+                        <img src="Assets/images/spider man/smcast5.jpg" alt="" id="" />
+                     </div>
+                     <h4>Jake Johnson</h4>
+                  </div>
+                  <div class="swiper-slide box">
+                     <div class="box-img">
+                        <img src="Assets/images/spider man/smcast6.jpg" alt="" id="" />
+                     </div>
+                     <h4>Issa Rae</h4>
+                  </div>
+                  <div class="swiper-slide box">
+                     <div class="box-img">
+                        <img src="Assets/images/spider man/smcast7.jpg" alt="" id="" />
+                     </div>
+                     <h4>Daniel Kaluuya</h4>
                   </div>
                </div>
                <div class="swiper-button-next"></div>
@@ -125,39 +151,33 @@
                <div class="swiper-wrapper">
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img
-                           src="Assets/images/oppenheimer/Ocrew1.jpg"
-                           alt=""
-                           id=""
-                           />
-                        <h4>Christopher Nolan(written for the screen by)</h4>
+                        <img src="Assets/images/spider man/smcrew1.jpg" alt="" id="" />
                      </div>
+                     <h4>Phil Lord</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img
-                           src="Assets/images/oppenheimer/Ocrew2.jpg"
-                           alt=""
-                           id=""
-                           />
-                        <h4>Kai Bird(based on the book by)</h4>
+                        <img src="Assets/images/spider man/smcrew2.jpg" alt="" id="" />
                      </div>
+                     <h4>Jaoquim Dos Santos</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img
-                           src="Assets/images/oppenheimer/Ocrew3.jpg"
-                           alt=""
-                           id=""
-                           />
-                        <h4>Martin Sherwin(based on the book by)</h4>
+                        <img src="Assets/images/spider man/smcrew3.jpg" alt="" id="" />
                      </div>
+                     <h4>Avi Arad</h4>
+                  </div>
+                  <div class="swiper-slide box">
+                     <div class="box-img">
+                        <img src="Assets/images/spider man/smcrew4.jpg" alt="" id="" />
+                     </div>
+                     <h4>Adithya Sood</h4>
                   </div>
                </div>
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
          </div>
       </section>
 
@@ -171,7 +191,7 @@
 
       <!-- Footer -->
       <section class="footer">
-         <a hret="#" class="logo"> <i class="bx bxs-movie"></i> Movies </a>
+         <a hret="#" class="logo"> <i class="bx bxs-movie"></i> ABC Cinema </a>
          <div class="social">
             <a href="#"><i class="bx bxl-facebook"></i></a>
             <a href="#"><i class="bx bxl-twitter"></i></a>
@@ -180,11 +200,7 @@
          </div>
       </section>
 
-      <div class="youtube-player-overlay active">
-         <div class="youtube-player-popup"></div>
-      </div>
-
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-      <script src="Assets/js/movie.js"></script>
+      <script src="movie.js"></script>
    </body>
 </html>

@@ -19,13 +19,14 @@
    <body>
       <!-- Navbar -->
       <header>
-         <a href="" class="logo"> <i class="bx bxs-movie"></i>Movies </a>
+         <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
 
          <div class="bx bx-menu" id="menu-icon"></div>
          <ul class="navbar">
             <li><a href="#home" class="home-active">Movies</a></li>
             <li><a href="#AboutUs">About Us</a></li>
             <li><a href="#ContactUs">Contact Us</a></li>
+            <li style="background-color: orange; padding: 5px;border-radius: 5px;"><a href="../user_review/review.jsp"><i class='bx bxs-star bx-flashing' ></i> Review-Feedback</a></li>
          </ul>
          <a href="http://localhost:8080/ABC_Cinema/register/login.jsp" class="button">Sign In</a>
       </header>
@@ -95,30 +96,45 @@
          <div class="movies-container">
             <div class="box">
                <div class="box-img">
-                  <a href=""><img src="Assets/images/m1.jpg" alt="" /></a>
+                  <a href="../movies/now-playing/index1.jsp"><img src="Assets/images/m1.jpg" alt="" /></a>
                </div>
                <h3>John Wick :<br />Chapter 4</h3>
                <span>120 min | Action</span>
             </div>
             <div class="box">
                <div class="box-img">
-                  <a href=""><img src="Assets/images/m2.jpg" alt="" /></a>
+                  <a href="../movies/now-playing/index6.jsp"><img src="Assets/images/m2.jpg" alt="" /></a>
                </div>
                <h3>Transformers : <br />Rise of the Beasts</h3>
                <span>120 min | Action</span>
             </div>
             <div class="box">
                <div class="box-img">
-                  <a href=""><img src="Assets/images/O2.jpeg" alt="" /></a>
+                  <a href="../movies/now-playing/index3.jsp"><img src="Assets/images/O2.jpeg" alt="" /></a>
                </div>
                <h3>Oppenheimer</h3>
                <span>120 min | Action</span>
             </div>
+             <div class="box">
+               <div class="box-img">
+                  <a href="../movies/now-playing/index5.jsp"><img src="Assets/images/spiderman.jpg" alt="" /></a>
+               </div>
+               <h3>Spider-Man</h3>
+               <span>120 min | Action</span>
+            </div>
             <div class="box">
                <div class="box-img">
-                  <a href=""><img src="Assets/images/Pathaan1.jpg" alt="" /></a>
+                  <a href="../movies/now-playing/index4.jsp"><img src="Assets/images/Pathaan1.jpg" alt="" /></a>
                </div>
                <h3>Pathaan</h3>
+               <span>120 min | Action</span>
+            </div>
+           
+            <div class="box">
+               <div class="box-img">
+                  <a href="../movies/now-playing/index2.jsp"><img src="Assets/images/missionImpossible.jpg" alt="" /></a>
+               </div>
+               <h3>Mission Impossible</h3>
                <span>120 min | Action</span>
             </div>
          </div>
@@ -130,74 +146,39 @@
             <div class="swiper-wrapper">
                <div class="swiper-slide box">
                   <div class="box-img">
-                     <img src="/home/images/ " alt="" id="venom" />
+                     <a href="../movies/upcoming/index5.jsp"><img src="Assets/images/barbie.jpg" alt="" id="" /></a>
                   </div>
-                  <h3>Venom</h3>
+                  <h3>Barbie</h3>
+                  <span>Comedy | Fantasy</span>
+               </div>
+               <div class="swiper-slide box">
+                  <div class="box-img">
+                     <a href="../movies/upcoming/index3.jsp"><img src="Assets/images/salaar.jpg" alt="" /></a>
+                  </div>
+                  <h3>Salaar</h3>
+                  <span>Action | Adventure | Thriller</span>
+               </div>
+               <div class="swiper-slide box">
+                  <div class="box-img">
+                     <a href="../movies/upcoming/index4.jsp"><img src="Assets/images/vaathi.png" alt="" /></a>
+                  </div>
+                  <h3>Vaathi</h3>
+                  <span>Drama | Romance | Action</span>
+               </div>
+               <div class="swiper-slide box">
+                  <div class="box-img">
+                     <a href="../movies/upcoming/"><img src="Assets/images/" alt="" /></a>
+                  </div>
+                  <h3></h3>
                   <span>120 min | Action</span>
                </div>
                <div class="swiper-slide box">
                   <div class="box-img">
-                     <a href="/home/images/"><img src="/home/images/" alt="" /></a>
+                     <a href="../movies/upcoming/"><img src="Assets/images/" alt="" /></a>
                   </div>
-                  <h3>Dunkirk</h3>
+                  <h3></h3>
                   <span>120 min | Action</span>
-               </div>
-               <div class="swiper-slide box">
-                  <div class="box-img">
-                     <a href="/home/images/"><img src="/home/images/" alt="" /></a>
-                  </div>
-                  <h3>SuperMan VS BatMan</h3>
-                  <span>120 min | Action</span>
-               </div>
-               <div class="swiper-slide box">
-                  <div class="box-img">
-                     <a href="/home/images/"><img src="/home/images/" alt="" /></a>
-                  </div>
-                  <h3>John Wick</h3>
-                  <span>120 min | Action</span>
-               </div>
-               <div class="swiper-slide box">
-                  <div class="box-img">
-                     <a href="/home/images/"><img src="/home/images/" alt="" /></a>
-                  </div>
-                  <h3>Aquaman</h3>
-                  <span>120 min | Action</span>
-               </div>
-               <div class="swiper-slide box">
-                  <div class="box-img">
-                     <a href="/home/images/"><img src="/home/images/" alt="" /></a>
-                  </div>
-                  <h3>Black Panther</h3>
-                  <span>120 min | Action</span>
-               </div>
-               <div class="swiper-slide box">
-                  <div class="box-img">
-                     <a href="/home/images/"><img src="/home/images/" alt="" /></a>
-                  </div>
-                  <h3>THOR</h3>
-                  <span>120 min | Action</span>
-               </div>
-               <div class="swiper-slide box">
-                  <div class="box-img">
-                     <a href="/home/images/"><img src="/home/images/" alt="" /></a>
-                  </div>
-                  <h3>Bumblebee</h3>
-                  <span>120 min | Action</span>
-               </div>
-               <div class="swiper-slide box">
-                  <div class="box-img">
-                     <a href="/home/images/"><img src="/home/images/" alt="" /></a>
-                  </div>
-                  <h3>Mortal Engines</h3>
-                  <span>120 min | Action</span>
-               </div>
-               <div class="swiper-slide box">
-                  <div class="box-img">
-                     <a href="/home/images/"><img src="/home/images/" alt="" /></a>
-                  </div>
-                  <h3>Underworld : Blood Wars</h3>
-                  <span>120 min | Action</span>
-               </div>
+               </div>                 
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -207,12 +188,12 @@
 
       <!-- Footer -->
       <section class="footer">
-         <a hret="#" class="logo"> <i class="bx bxs-movie"></i> Movies </a>
+         <a hret="#" class="logo"> <i class="bx bxs-movie"></i> ABC Cinema </a>
          <div class="social">
             <a href="#"><i class="bx bxl-facebook"></i></a>
             <a href="#"><i class="bx bxl-twitter"></i></a>
             <a href="#"><i class="bx bxl-instagram"></i></a>
-            <a href="#"><i class="bx bxl-ticktok"></i></a>
+            <a href="#"><i class="bx bxl-tiktok"></i></a>
          </div>
       </section>
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

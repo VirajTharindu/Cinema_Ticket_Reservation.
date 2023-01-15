@@ -4,11 +4,11 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>Oppenheimer</title>
 
       <link
          rel="stylesheet"
-         href="Assets/styles/movies.css"
+         href="movies.css"
          />
       <!-- CSS only -->
       <!-- JavaScript Bundle with Popper -->
@@ -29,27 +29,28 @@
    <body>
       <!-- Navbar -->
       <header>
-         <a href="" class="logo"> <i class="bx bxs-movie"></i>Movies </a>
+         <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
 
          <div class="bx bx-menu" id="menu-icon"></div>
          <ul class="navbar">
             <li><a href="/../ABC_Cinema/home/home.jsp" class="home-active">Movies</a></li>
-            <li><a href="#AboutUs">About Us</a></li>
+           <li><a href="#AboutUs">About Us</a></li>
             <li><a href="#ContactUs">Contact Us</a></li>
+            <li style="background-color: orange; padding: 5px;border-radius: 5px;"><a href="../../user_review/review.jsp"><i class='bx bxs-star bx-flashing' ></i> Review</a></li>
          </ul>
-         <a href="#" class="button">Sign In</a>
+         <a href="http://localhost:8080/ABC_Cinema/register/login.jsp" class="button">Sign In</a>
       </header>
       <section class="home swiper" id="home">
          <div class="swiper-wrapper">
             <div class="swiper-slide container">
                <img
-                  src="Assets/images/pathaan/Pathaan1.jpg"
+                  src="Assets/images/oppenheimer/O1.jpg"
                   alt=""
                   srcset=""
                   />
                <div class="home-text">
                   <span></span>
-                  <h1>Pathaan</h1>
+                  <h1>Oppenheimer</h1>
                   <h3 class="genre">Action | Adventure | Thriller</h3>
                   <br />
                   <a href="#" class="button">Book Now</a>
@@ -57,7 +58,7 @@
             </div>
             <div class="swiper-slide container">
                <img
-                  src="Assets/images/pathaan/Pathaan2.jpg"
+                  src="Assets/images/oppenheimer/O2.png"
                   alt=""
                   srcset=""
                   id="second-slide"
@@ -78,10 +79,8 @@
             <h1 class="heading">Storyline</h1>
             <div class="story">
                <span>
-                  Somewhere in the dystopian Middle East, grand houses that once
-                  housed the wealthy are now homes of the city's most-dangerous
-                  criminals. An undercover cop, his ex-con, and others will take down
-                  the drug lord who killed his own father.
+                  The story of American scientist J. Robert Oppenheimer and his role
+                  in the development of the atomic bomb.
                </span>
             </div>
             <div class=""></div>
@@ -95,33 +94,25 @@
                <div class="swiper-wrapper">
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img
-                           src="Assets/images/pathaan/cast1.jpg"
-                           alt=""
-                           id=""
-                           />
+                        <img src="images/Ocast1.jpg" alt="" id="" />
                      </div>
-                     <h4>Shah Rukh Khan</h4>
+                     <h4>Cillian Murphy</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/pathaan/cast2.jpg"
+                           src="Assets/images/oppenheimer/Ocast2.jpg"
                            alt=""
                            id=""
                            />
                      </div>
-                     <h4>Deepika Padukone</h4>
+                     <h4>Emily Blunt</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img
-                           src="Assets/images/pathaan/cast3.jpg"
-                           alt=""
-                           id=""
-                           />
+                        <img src="images/Ocast3.jpg" alt="" id="" />
                      </div>
-                     <h4>John Abraham</h4>
+                     <h4>Matt Damon</h4>
                   </div>
                </div>
                <div class="swiper-button-next"></div>
@@ -136,31 +127,31 @@
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/pathaan/crew1.jpg"
+                           src="Assets/images/oppenheimer/Ocrew1.jpg"
                            alt=""
                            id=""
                            />
-                        <h4>Siddharth Anand(story)</h4>
+                        <h4>Christopher Nolan(written for the screen by)</h4>
                      </div>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/pathaan/crew2.png"
+                           src="Assets/images/oppenheimer/Ocrew2.jpg"
                            alt=""
                            id=""
                            />
-                        <h4>Shridhar Raghavan(screenplay)</h4>
+                        <h4>Kai Bird(based on the book by)</h4>
                      </div>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/pathaan/crew3.jpg"
+                           src="Assets/images/oppenheimer/Ocrew3.jpg"
                            alt=""
                            id=""
                            />
-                        <h4>Abbas Tyrewala(dialogue)</h4>
+                        <h4>Martin Sherwin(based on the book by)</h4>
                      </div>
                   </div>
                </div>
@@ -181,7 +172,7 @@
 
       <!-- Footer -->
       <section class="footer">
-         <a hret="#" class="logo"> <i class="bx bxs-movie"></i> Movies </a>
+         <a hret="#" class="logo"> <i class="bx bxs-movie"></i> ABC Cinema </a>
          <div class="social">
             <a href="#"><i class="bx bxl-facebook"></i></a>
             <a href="#"><i class="bx bxl-twitter"></i></a>
@@ -195,6 +186,6 @@
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-      <script src="Assets/js/movie.js"></script>
+      <script src="movie.js"></script>
    </body>
 </html>

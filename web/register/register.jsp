@@ -27,11 +27,11 @@
      <input type="hidden" id="status" value="<%= request.getParameter("status") %>">
      
     <header>
-      <a href="" class="logo"> <i class="bx bxs-movie"></i>Movies </a>
+      <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema</a>
 
       <div class="bx bx-menu" id="menu-icon"></div>
       <ul class="navbar">
-        <li><a href="#home" class="">Home</a></li>
+        <li><a href="http://localhost:8080/ABC_Cinema/home/home.jsp" class="">Home</a></li>
         <li><a href="#AboutUs">About Us</a></li>
         <li><a href="#ContactUs">Contact Us</a></li>
       </ul>

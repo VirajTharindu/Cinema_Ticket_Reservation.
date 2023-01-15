@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>mission impossible</title>
 
       <link
          rel="stylesheet"
@@ -29,42 +29,43 @@
    <body>
       <!-- Navbar -->
       <header>
-         <a href="" class="logo"> <i class="bx bxs-movie"></i>Movies </a>
+         <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
 
          <div class="bx bx-menu" id="menu-icon"></div>
          <ul class="navbar">
             <li><a href="/../ABC_Cinema/home/home.jsp" class="home-active">Home</a></li>
-            <li><a href="#AboutUs">About Us</a></li>
+           <li><a href="#AboutUs">About Us</a></li>
             <li><a href="#ContactUs">Contact Us</a></li>
+            <li style="background-color: orange; padding: 5px;border-radius: 5px;"><a href="../../user_review/review.jsp"><i class='bx bxs-star bx-flashing' ></i> Review</a></li>
          </ul>
-         <a href="#" class="button">Sign In</a>
+         <a href="http://localhost:8080/ABC_Cinema/register/login.jsp" class="button">Sign In</a>
       </header>
       <section class="home swiper" id="home">
          <div class="swiper-wrapper">
             <div class="swiper-slide container">
                <img
-                  src="Assets/images/JohnWick/home1.jpg"
+                  src="Assets/images/mission impossible/mibanner.jpg"
                   alt=""
                   srcset=""
                   />
                <div class="home-text">
                   <span></span>
-                  <h1>John Wick :<br />Chapter 4</h1>
-                  <h3 class="genre">Action | Crime | Thriller</h3>
+                  <h1>Mission: Impossible - Dead Reckoning Part one</h1>
+                  <h3 class="genre">Action | Adventure | Thriller</h3>
                   <br />
                   <a href="#" class="button">Book Now</a>
                </div>
             </div>
             <div class="swiper-slide container">
                <img
-                  src="Assets/images/JohnWick/slide2.jpg"
+                  src="Assets/images/mission impossible/mibanner2.jpg"
                   alt=""
                   srcset=""
                   id="second-slide"
                   />
                <a href="#" class="button-secondslide">Book Now</a>
             </div>
-            <a href="" class="play">
+            <a href="https://youtu.be/-FmWuCgJmxo" class="play">
                <i class="bx bx-play"></i>
             </a>
          </div>
@@ -78,10 +79,11 @@
             <h1 class="heading">Storyline</h1>
             <div class="story">
                <span>
-                  John Wick uncovers a path to defeating The High Table. But before he
-                  can earn his freedom, Wick must face off against a new enemy with
-                  powerful alliances across the globe and forces that turn old friends
-                  into foes.
+                  Plot Summary (6) An American agent, under false suspicion of
+                  disloyalty, must discover and expose the real spy without the help
+                  of his organization. Based on the hit television series. Jim Phelps
+                  (Jon Voight) was sent to Prague for a mission to prevent the theft
+                  of classified material.
                </span>
             </div>
             <div class=""></div>
@@ -96,92 +98,72 @@
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/JohnWick/cast1.jpg"
+                           src="Assets/images/mission impossible/micast1.jpg"
                            alt=""
                            id=""
                            />
                      </div>
-                     <h4>Keanu Reeves</h4>
+                     <h4>Tom Cruise</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/JohnWick/cast2.jpg"
+                           src="Assets/images/mission impossible/micast2.jpg"
                            alt=""
                            id=""
                            />
                      </div>
-                     <h4>Donnie Yen</h4>
+                     <h4>Hayley Atwell</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/JohnWick/cast3.jpg"
+                           src="Assets/images/mission impossible/micast3.jpg"
                            alt=""
                            id=""
                            />
                      </div>
-                     <h4>Hiroyuki Sanada</h4>
+                     <h4>Rebecca Ferguson</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/JohnWick/cast4.jpg"
+                           src="Assets/images/mission impossible/micast4.jpg"
                            alt=""
                            id=""
                            />
                      </div>
-                     <h4>Scott Adkins</h4>
+                     <h4>Vanessa Kirby</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/JohnWick/cast5.jpg"
+                           src="Assets/images/mission impossible/micast5.jpg"
                            alt=""
                            id=""
                            />
                      </div>
-                     <h4>Ian McShane</h4>
+                     <h4>Pom Klementieff</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/JohnWick/cast6.jpg"
+                           src="Assets/images/mission impossible/micast6.jpg"
                            alt=""
                            id=""
                            />
                      </div>
-                     <h4>Rina Sawayama</h4>
+                     <h4>Simon Pegg</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/JohnWick/cast7.jpg"
+                           src="Assets/images/mission impossible/micast7.jpg"
                            alt=""
                            id=""
                            />
                      </div>
-                     <h4>Lance Reddick</h4>
-                  </div>
-                  <div class="swiper-slide box">
-                     <div class="box-img">
-                        <img
-                           src="Assets/images/JohnWick/cast8.jpg"
-                           alt=""
-                           id=""
-                           />
-                     </div>
-                     <h4>Bill Skarsgård</h4>
-                  </div>
-                  <div class="swiper-slide box">
-                     <div class="box-img">
-                        <img
-                           src="Assets/images/JohnWick/cast9.jpg"
-                           alt=""
-                           id=""
-                           />
-                     </div>
-                     <h4>Laurence Fishburne</h4>
+                     <h4>Angela Bassett</h4>
                   </div>
                </div>
                <div class="swiper-button-next"></div>
@@ -196,29 +178,42 @@
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/JohnWick/crew1.jpg"
+                           src="Assets/images/mission impossible/micrw1.jpg"
                            alt=""
                            id=""
                            />
                      </div>
+                     <h4>Tom Cruise</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/JohnWick/crew2.jpg"
+                           src="Assets/images/mission impossible/micrw2.jpg"
                            alt=""
                            id=""
                            />
                      </div>
+                     <h4>Christopher McQuarrie</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
                         <img
-                           src="Assets/images/JohnWick/crew3.jpg"
+                           src="Assets/images/mission impossible/micrw3.jpg"
                            alt=""
                            id=""
                            />
                      </div>
+                     <h4>David Ellison</h4>
+                  </div>
+                  <div class="swiper-slide box">
+                     <div class="box-img">
+                        <img
+                           src="Assets/images/mission impossible/micrw4.jpg"
+                           alt=""
+                           id=""
+                           />
+                     </div>
+                     <h4>Dana Goldberg</h4>
                   </div>
                </div>
                <div class="swiper-button-next"></div>
@@ -238,7 +233,7 @@
 
       <!-- Footer -->
       <section class="footer">
-         <a hret="#" class="logo"> <i class="bx bxs-movie"></i> Movies </a>
+         <a hret="#" class="logo"> <i class="bx bxs-movie"></i> ABC Cinema </a>
          <div class="social">
             <a href="#"><i class="bx bxl-facebook"></i></a>
             <a href="#"><i class="bx bxl-twitter"></i></a>
@@ -246,10 +241,6 @@
             <a href="#"><i class="bx bxl-tiktok"></i></a>
          </div>
       </section>
-
-      <div class="youtube-player-overlay active">
-         <div class="youtube-player-popup"></div>
-      </div>
 
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
       <script src="movie.js"></script>

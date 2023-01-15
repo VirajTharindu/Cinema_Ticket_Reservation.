@@ -60,7 +60,7 @@
                 
             </header>
             <ul>
-                <li><a href="#">Home </a></li>
+                <li><a href="/../ABC_Cinema/home/home.jsp">Home </a></li>
                 <li><a href="#">Booking </a></li>
                 <li><a href="#">Payment </a></li>
                 <!--<li><a href="#">Seat Selection </a></li>-->
@@ -173,12 +173,11 @@
                         </div>
  
         </section>
-<!-- 
     <script type="text/javascript">
         function preventBack() { window.history.forward(); }
         setTimeout("preventBack()", 0);
         window.onunload = function () { null };
-    </script>-->
+    </script>
         
     </body>
 </html>

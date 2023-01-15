@@ -4,9 +4,12 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>John Wick</title>
 
-      <link rel="stylesheet" href="Assets/styles/movies.css" />
+      <link
+         rel="stylesheet"
+         href="movies.css"
+         />
       <!-- CSS only -->
       <!-- JavaScript Bundle with Popper -->
       <script
@@ -26,35 +29,36 @@
    <body>
       <!-- Navbar -->
       <header>
-         <a href="" class="logo"> <i class="bx bxs-movie"></i>Movies </a>
+         <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
 
          <div class="bx bx-menu" id="menu-icon"></div>
          <ul class="navbar">
             <li><a href="/../ABC_Cinema/home/home.jsp" class="home-active">Home</a></li>
-            <li><a href="#AboutUs">About Us</a></li>
+           <li><a href="#AboutUs">About Us</a></li>
             <li><a href="#ContactUs">Contact Us</a></li>
+            <li style="background-color: orange; padding: 5px;border-radius: 5px;"><a href="../../user_review/review.jsp"><i class='bx bxs-star bx-flashing' ></i> Review</a></li>
          </ul>
-         <a href="#" class="button">Sign In</a>
+         <a href="http://localhost:8080/ABC_Cinema/register/login.jsp" class="button">Sign In</a>
       </header>
       <section class="home swiper" id="home">
          <div class="swiper-wrapper">
             <div class="swiper-slide container">
                <img
-                  src="Assets/images/spider man/sm1.jpg"
+                  src="Assets/images/JohnWick/home1.jpg"
                   alt=""
                   srcset=""
                   />
                <div class="home-text">
-                  <span>Marvel Universe</span>
-                  <h1>Spider-Man: Across the Spider-Verse</h1>
-                  <h3 class="genre">Action | Adventure | Thriller</h3>
+                  <span></span>
+                  <h1>John Wick :<br />Chapter 4</h1>
+                  <h3 class="genre">Action | Crime | Thriller</h3>
                   <br />
                   <a href="#" class="button">Book Now</a>
                </div>
             </div>
             <div class="swiper-slide container">
                <img
-                  src="Assets/images/spider man/sm2.lpg.jpg"
+                  src="Assets/images/JohnWick/slide2.jpg"
                   alt=""
                   srcset=""
                   id="second-slide"
@@ -75,13 +79,10 @@
             <h1 class="heading">Storyline</h1>
             <div class="story">
                <span>
-                  After reuniting with Gwen Stacy, Brooklyn's full-time, friendly
-                  neighborhood Spider-Man is catapulted across the Multiverse, where
-                  he encounters a team of Spider-People charged with protecting its
-                  very existence. However, when the heroes clash on how to handle a
-                  new threat, Miles finds himself pitted against the other Spiders. He
-                  must soon redefine what it means to be a hero so he can save the
-                  people he loves most.
+                  John Wick uncovers a path to defeating The High Table. But before he
+                  can earn his freedom, Wick must face off against a new enemy with
+                  powerful alliances across the globe and forces that turn old friends
+                  into foes.
                </span>
             </div>
             <div class=""></div>
@@ -95,45 +96,93 @@
                <div class="swiper-wrapper">
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="Assets/images/spider man/smcast1.jpg" alt="" id="" />
+                        <img
+                           src="Assets/images/JohnWick/cast1.jpg"
+                           alt=""
+                           id=""
+                           />
                      </div>
-                     <h4>Hailee Steinfeld</h4>
+                     <h4>Keanu Reeves</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="Assets/images/spider man/smcast2.jpg" alt="" id="" />
+                        <img
+                           src="Assets/images/JohnWick/cast2.jpg"
+                           alt=""
+                           id=""
+                           />
                      </div>
-                     <h4>Oscar Isaac</h4>
+                     <h4>Donnie Yen</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="Assets/images/spider man/smcast3.jpg" alt="" id="" />
+                        <img
+                           src="Assets/images/JohnWick/cast3.jpg"
+                           alt=""
+                           id=""
+                           />
                      </div>
-                     <h4>Shameik Moore</h4>
+                     <h4>Hiroyuki Sanada</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="Assets/images/spider man/smcast4.jpg" alt="" id="" />
+                        <img
+                           src="Assets/images/JohnWick/cast4.jpg"
+                           alt=""
+                           id=""
+                           />
                      </div>
-                     <h4>Brian Tyree Henry</h4>
+                     <h4>Scott Adkins</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="Assets/images/spider man/smcast5.jpg" alt="" id="" />
+                        <img
+                           src="Assets/images/JohnWick/cast5.jpg"
+                           alt=""
+                           id=""
+                           />
                      </div>
-                     <h4>Jake Johnson</h4>
+                     <h4>Ian McShane</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="Assets/images/spider man/smcast6.jpg" alt="" id="" />
+                        <img
+                           src="Assets/images/JohnWick/cast6.jpg"
+                           alt=""
+                           id=""
+                           />
                      </div>
-                     <h4>Issa Rae</h4>
+                     <h4>Rina Sawayama</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="Assets/images/spider man/smcast7.jpg" alt="" id="" />
+                        <img
+                           src="Assets/images/JohnWick/cast7.jpg"
+                           alt=""
+                           id=""
+                           />
                      </div>
-                     <h4>Daniel Kaluuya</h4>
+                     <h4>Lance Reddick</h4>
+                  </div>
+                  <div class="swiper-slide box">
+                     <div class="box-img">
+                        <img
+                           src="Assets/images/JohnWick/cast8.jpg"
+                           alt=""
+                           id=""
+                           />
+                     </div>
+                     <h4>Bill Skarsgård</h4>
+                  </div>
+                  <div class="swiper-slide box">
+                     <div class="box-img">
+                        <img
+                           src="Assets/images/JohnWick/cast9.jpg"
+                           alt=""
+                           id=""
+                           />
+                     </div>
+                     <h4>Laurence Fishburne</h4>
                   </div>
                </div>
                <div class="swiper-button-next"></div>
@@ -147,27 +196,30 @@
                <div class="swiper-wrapper">
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="Assets/images/spider man/smcrew1.jpg" alt="" id="" />
+                        <img
+                           src="Assets/images/JohnWick/crew1.jpg"
+                           alt=""
+                           id=""
+                           />
                      </div>
-                     <h4>Phil Lord</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="Assets/images/spider man/smcrew2.jpg" alt="" id="" />
+                        <img
+                           src="Assets/images/JohnWick/crew2.jpg"
+                           alt=""
+                           id=""
+                           />
                      </div>
-                     <h4>Jaoquim Dos Santos</h4>
                   </div>
                   <div class="swiper-slide box">
                      <div class="box-img">
-                        <img src="Assets/images/spider man/smcrew3.jpg" alt="" id="" />
+                        <img
+                           src="Assets/images/JohnWick/crew3.jpg"
+                           alt=""
+                           id=""
+                           />
                      </div>
-                     <h4>Avi Arad</h4>
-                  </div>
-                  <div class="swiper-slide box">
-                     <div class="box-img">
-                        <img src="Assets/images/spider man/smcrew4.jpg" alt="" id="" />
-                     </div>
-                     <h4>Adithya Sood</h4>
                   </div>
                </div>
                <div class="swiper-button-next"></div>
@@ -196,7 +248,13 @@
          </div>
       </section>
 
+      <div class="youtube-player-overlay active">
+         <div class="youtube-player-popup">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qEVUtrk8_B4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
+      </div>
+
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-      <script src="Assets/js/movie.js"></script>
+      <script src="movie.js"></script>
    </body>
 </html>

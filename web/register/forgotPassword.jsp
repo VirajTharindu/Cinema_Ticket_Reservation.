@@ -27,7 +27,7 @@
      <input type="hidden" id="status" value="<%= request.getParameter("status") %>">
      
     <header>
-      <a href="" class="logo"> <i class="bx bxs-movie"></i>Movies </a>
+      <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
 
       <div class="bx bx-menu" id="menu-icon"></div>
       <ul class="navbar">

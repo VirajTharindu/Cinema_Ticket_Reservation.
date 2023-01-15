@@ -23,7 +23,7 @@
   <body>
     <input type="hidden" id="status" value="<%= request.getParameter("status") %>">
     <header>
-      <a href="" class="logo"> <i class="bx bxs-movie"></i>Movies </a>
+      <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema</a>
 
       <div class="bx bx-menu" id="menu-icon"></div>
       <ul class="navbar">
@@ -50,7 +50,7 @@
             ><span><i class="bx bxs-lock-alt"></i></span> Password</label
           >
         </div>
-        <div class="pass">Forgot Password?</div>
+         <div class="pass"><a href="forgotPassword.jsp">Forgot Password?</a></div>
         <input type="submit" value="Login" />
         <div class="signup_link">
           Not a member? <a href="register.jsp">Signup</a>
