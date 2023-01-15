@@ -73,7 +73,7 @@
                             <li class="flex justify-content-between">
                                 <label for="price">Amount Payable : </label>
                                 <span class="text-red font-title"> $<%= price %> </span>
-                                <input type="hidden" value="<%= price %>" id="amount"></input>
+                                <input type="hidden" value="<%= price %>" id="amount" />
                             </li>
                         </ul>
                         <div id="paypal-payment-button">

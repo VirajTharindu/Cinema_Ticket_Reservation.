@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>Register Page</title>
+    <title>Book</title>
     <link rel="stylesheet" href="book.css" />
 
     <link
@@ -84,7 +84,7 @@
 <!--         <div class="signup_link">
           Already Registered ? <a href="login.jsp">Sign In</a>
          </div>-->
-        <input type="submit" value="Continue" onclick="fun()" />      
+   <input type="submit" value="Continue" onclick="fun()" />      
       </form>
     </div>
      

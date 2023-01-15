@@ -1,12 +1,28 @@
 
+<%@page import="java.sql.SQLException"%>
+<%@page import="java.sql.ResultSet"%>
 <%@page import="java.sql.Connection"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="com.abc.dbconnector.ConnectionProvider"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <% 
-
+//   try {
+//          Connection con = ConnectionProvider.getCon();
+//          PreparedStatement pst = con.prepareStatement("SELECT * FROM bookings");
+//          ResultSet rs = pst.executeQuery();
+//          session.setAttribute("id", rs.getString("id"));
+//  
+//      }catch(SQLException e){
+//          e.printStackTrace();
+//      }
+   
+   Integer price = (Integer)session.getAttribute("price");
+   Integer seat = (Integer)session.getAttribute("seat");
+   String name = (String)session.getAttribute("name");
+   String email = (String)session.getAttribute("email");
+   String date = (String)session.getAttribute("date");
+//   Integer id = (Integer)session.getAttribute("id");
 %>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,10 +44,26 @@
     <div class="site-title text-center">
         <div><img src="./assets/checked.png" alt=""></div>
         <h1 class="font-title">Payment Done Successfully...!</h1>
-        <a href="../AddToDB"><button type="button" class="btn btn-primary btn-lg">Back To Booking</button><a/>
+        <input type="hidden" id="name" value="<%= name %>" />
+        <input type="hidden" id="email" value="<%= email %>" />
+        <input type="hidden" id="seat" value="<%= seat %>" />
+        <input type="hidden" id="date" value="<%= date %>" />
+        <input type="hidden" id="price" value="<%= price %>" />
+        <a href="../AddToDB"><button type="button" class="btn btn-primary btn-lg" onclick="sendMail()">Back To Booking & Send a reciept.</button><a/>
+           
     </div>
 
 </main>
 
 </body>
+
+<script src="mail.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("HT94bLSUqQ16SetOg");
+   })();
+</script>
 </html>
