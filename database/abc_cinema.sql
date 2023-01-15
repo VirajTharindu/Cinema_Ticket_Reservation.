@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 13, 2023 at 10:07 AM
+-- Generation Time: Jan 15, 2023 at 02:50 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.10
 
@@ -20,6 +20,28 @@ SET time_zone = "+00:00";
 --
 -- Database: `abc_cinema`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `bookings`
+--
+
+CREATE TABLE `bookings` (
+  `id` int(11) NOT NULL,
+  `name` text NOT NULL,
+  `email` text NOT NULL,
+  `date` text NOT NULL,
+  `seat` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `bookings`
+--
+
+INSERT INTO `bookings` (`id`, `name`, `email`, `date`, `seat`) VALUES
+(1, 'Sen', 'sen@gmail.com', '01/16/2023', 2),
+(2, 'Sen', 'sen@gmail.com', '01/16/2023', 2);
 
 -- --------------------------------------------------------
 
@@ -67,11 +89,18 @@ INSERT INTO `users` (`uid`, `uname`, `upwd`, `uemail`, `umobile`) VALUES
 (3, 'yrd', '2345', 'yrd@gmail.com', '12345678'),
 (4, 'w', '345', 'w@gmail.com', '34345345345'),
 (5, 'r', '234', 'e@gmail.com', '3453453535'),
-(6, 'r', 'rr', 'r@gmail.com', '4534535345');
+(6, 'r', 'rr', 'r@gmail.com', '4534535345'),
+(7, 'asd', '234', 'asd@gmail.com', '34534534535');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `bookings`
+--
+ALTER TABLE `bookings`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `reviews`
@@ -90,6 +119,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `bookings`
+--
+ALTER TABLE `bookings`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
@@ -99,7 +134,7 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
