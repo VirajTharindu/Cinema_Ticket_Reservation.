@@ -24,8 +24,8 @@
          <div class="bx bx-menu" id="menu-icon"></div>
          <ul class="navbar">
             <li><a href="#home" class="home-active">Movies</a></li>
-            <li><a href="#AboutUs">About Us</a></li>
-            <li><a href="#ContactUs">Contact Us</a></li>
+            <li><a href="../aboutus.jsp">About Us</a></li>
+            
             <li style="background-color: orange; padding: 5px;border-radius: 5px;"><a href="../user_review/review.jsp"><i class='bx bxs-star bx-flashing' ></i> Review-Feedback</a></li>
          </ul>
          <a href="http://localhost:8080/ABC_Cinema/register/login.jsp" class="button">Sign In</a>
@@ -40,7 +40,7 @@
                   <h1>John Wick :<br />Chapter 4</h1>
                   <br />
                   <a href="../bookings/book.jsp" class="button">Book Now</a>
-                  <a href="#" class="play">
+                  <a href="https://youtu.be/qEVUtrk8_B4" class="play">
                      <i class="bx bx-play"></i>
                   </a>
                </div>
@@ -55,7 +55,7 @@
                   </h1>
                   <br />
                   <a href="../bookings/book.jsp" class="button">Book Now</a>
-                  <a href="#" class="play">
+                  <a href="https://youtu.be/WWWDskI46Js" class="play">
                      <i class="bx bx-play"></i>
                   </a>
                </div>
@@ -67,7 +67,7 @@
                   <h1>Oppenheimer</h1>
                   <br />
                   <a href="../bookings/book.jsp" class="button">Book Now</a>
-                  <a href="#" class="play">
+                  <a href="https://youtu.be/bK6ldnjE3Y0" class="play">
                      <i class="bx bx-play"></i>
                   </a>
                </div>
@@ -79,7 +79,7 @@
                   <h1>Pathaan</h1>
                   <br />
                   <a href="../bookings/book.jsp" class="button">Book Now</a>
-                  <a href="#" class="play">
+                  <a href="https://youtu.be/vqu4z34wENw" class="play">
                      <i class="bx bx-play"></i>
                   </a>
                </div>
@@ -165,20 +165,7 @@
                   <h3>Vaathi</h3>
                   <span>Drama | Romance | Action</span>
                </div>
-               <div class="swiper-slide box">
-                  <div class="box-img">
-                     <a href="../movies/upcoming/"><img src="Assets/images/" alt="" /></a>
-                  </div>
-                  <h3></h3>
-                  <span>120 min | Action</span>
-               </div>
-               <div class="swiper-slide box">
-                  <div class="box-img">
-                     <a href="../movies/upcoming/"><img src="Assets/images/" alt="" /></a>
-                  </div>
-                  <h3></h3>
-                  <span>120 min | Action</span>
-               </div>                 
+                             
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>

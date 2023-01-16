@@ -22,6 +22,8 @@
    String email = (String)session.getAttribute("email");
    String date = (String)session.getAttribute("date");
 //   Integer id = (Integer)session.getAttribute("id");
+
+   
 %>
 <!DOCTYPE html>
 <html lang="en">

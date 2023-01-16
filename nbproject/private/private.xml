@@ -5,7 +5,11 @@
         <group>
             <file>file:/G:/My%20Work/ABC_Cinema/web/bookings/book.jsp</file>
             <file>file:/G:/My%20Work/ABC_Cinema/web/home/home.jsp</file>
-            <file>file:/G:/My%20Work/ABC_Cinema/web/register/register.jsp</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/bookings/success.jsp</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/bookings/mail.js</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/bookings/index.js</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/bookings/payment.jsp</file>
+            <file>file:/G:/My%20Work/ABC_Cinema/web/user/userprofile.jsp</file>
         </group>
     </open-files>
 </project-private>

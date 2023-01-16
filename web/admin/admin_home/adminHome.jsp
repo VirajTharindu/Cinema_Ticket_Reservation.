@@ -88,7 +88,7 @@ catch(Exception ex) {
         </fieldset>
 
         <div class="coordonate">
-            <h2><i class="fas fa-id-card" style="margin-right: 10px;"></i> Contact Us</h2>
+            <h2 style="margin-right: 10px;"><i class="fas fa-id-card" ></i> Contact Us</h2>
             <p>
                 Please contact our dev team for more details.<br>
                 <a href="#">contact</a>
@@ -103,9 +103,9 @@ catch(Exception ex) {
 
     </div>
 </body>
-   <script type="text/javascript">
+<!--   <script type="text/javascript">
         function preventBack() { window.history.forward(); }
         setTimeout("preventBack()", 0);
         window.onunload = function () { null };
-    </script>
+    </script>-->
 </html>

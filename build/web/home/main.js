@@ -43,7 +43,7 @@ var swiper = new Swiper(".upcoming-container", {
   spaceBetween: 20,
   loop: true,
   autoplay: {
-    delay: 55000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   centeredSlides: true,

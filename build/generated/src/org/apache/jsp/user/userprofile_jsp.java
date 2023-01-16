@@ -3,6 +3,8 @@ package org.apache.jsp.user;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.io.PrintWriter;
+import java.sql.SQLException;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import com.abc.dbconnector.ConnectionProvider;
@@ -51,14 +53,17 @@ public final class userprofile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
 
-   if (session.getAttribute("name") == null){
+   if (session.getAttribute("pwd") == null){
       response.sendRedirect("http://localhost:8080/ABC_Cinema/register/login.jsp");
    }
 
       out.write("\r\n");
       out.write("\r\n");
 
+   PrintWriter output = response.getWriter();
    Connection con = ConnectionProvider.getCon();
    Statement st = con.createStatement();
    String uid = (String)session.getAttribute("id");
@@ -66,6 +71,14 @@ public final class userprofile_jsp extends org.apache.jasper.runtime.HttpJspBase
    String upwd = (String)session.getAttribute("pwd");
    String uname = (String)session.getAttribute("name"); 
    String umobile = (String)session.getAttribute("mobile");
+   
+   con = ConnectionProvider.getCon();
+   PreparedStatement pst = con.prepareStatement("SELECT * FROM bookings WHERE email = (SELECT uemail FROM users WHERE uemail = ?)");
+   pst.setString(1, uemail);
+   ResultSet rs = pst.executeQuery();
+//   output.print(uemail);
+   
+//   output.print(seat);
 
       out.write("\r\n");
       out.write("\r\n");
@@ -112,7 +125,7 @@ public final class userprofile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                \r\n");
       out.write("            </header>\r\n");
       out.write("            <ul>\r\n");
-      out.write("                <li><a href=\"#\">Home </a></li>\r\n");
+      out.write("                <li><a href=\"/../ABC_Cinema/home/home.jsp\">Home </a></li>\r\n");
       out.write("                <li><a href=\"#\">Booking </a></li>\r\n");
       out.write("                <li><a href=\"#\">Payment </a></li>\r\n");
       out.write("                <!--<li><a href=\"#\">Seat Selection </a></li>-->\r\n");
@@ -196,67 +209,33 @@ public final class userprofile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            \r\n");
       out.write("      <table id=\"t01\" class=\"center\">\r\n");
       out.write("  <tr>\r\n");
-      out.write("    <th>Movie Number</th>\r\n");
-      out.write("    <th>Movie Name</th>\t\t\r\n");
+      out.write("<!--    <th>Movie Number</th>\r\n");
+      out.write("    <th>Movie Name</th>\t\t-->\r\n");
       out.write("    <th>Show Time</th>\r\n");
       out.write("    <th>Seat Num</th>\r\n");
       out.write("    <th>Ticket Price</th>\r\n");
       out.write("  </tr>\r\n");
+      out.write("  ");
+ 
+        while(rs.next()){ 
+     
+      out.write("\r\n");
       out.write("  <tr>\r\n");
+      out.write("     \r\n");
+      out.write("\r\n");
       out.write("    <td>");
-      out.print(request.getParameter("movienum"));
+      out.print( rs.getString("date") );
       out.write("</td>\r\n");
       out.write("    <td>");
-      out.print(request.getParameter("moviename"));
-      out.write("</td>\t\t\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("time"));
+      out.print( rs.getString("seat") );
       out.write("</td>\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("seat"));
-      out.write("</td>\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("seat"));
-      out.write("</td>\r\n");
-      out.write("    \r\n");
-      out.write("    \r\n");
+      out.write("\r\n");
       out.write("  </tr>\r\n");
-      out.write("  <tr>\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("movienum"));
-      out.write("</td>\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("moviename"));
-      out.write("</td>\t\t\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("time"));
-      out.write("</td>\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("seat"));
-      out.write("</td>\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("seat"));
-      out.write("</td>\r\n");
-      out.write("    \r\n");
-      out.write("  </tr>\r\n");
-      out.write("  <tr>\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("movienum"));
-      out.write("</td>\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("moviename"));
-      out.write("</td>\t\t\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("time"));
-      out.write("</td>\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("seat"));
-      out.write("</td>\r\n");
-      out.write("    <td>");
-      out.print(request.getParameter("seat"));
-      out.write("</td>\r\n");
-      out.write("    \r\n");
-      out.write("  </tr>\r\n");
+      out.write("  ");
+
+   }
+
+      out.write("\r\n");
       out.write("</table>      \r\n");
       out.write("            \r\n");
       out.write("                        <br>\r\n");
@@ -265,12 +244,11 @@ public final class userprofile_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                        </div>\r\n");
       out.write(" \r\n");
       out.write("        </section>\r\n");
-      out.write("<!-- \r\n");
       out.write("    <script type=\"text/javascript\">\r\n");
       out.write("        function preventBack() { window.history.forward(); }\r\n");
       out.write("        setTimeout(\"preventBack()\", 0);\r\n");
       out.write("        window.onunload = function () { null };\r\n");
-      out.write("    </script>-->\r\n");
+      out.write("    </script>\r\n");
       out.write("        \r\n");
       out.write("    </body>\r\n");
       out.write("</html>\r\n");

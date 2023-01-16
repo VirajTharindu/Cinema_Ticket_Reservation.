@@ -30,7 +30,7 @@
          <ul class="navbar">
             <li><a href="/../ABC_Cinema/home/home.jsp" class="home-active">Home</a></li>
             <li><a href="#AboutUs">About Us</a></li>
-            <li><a href="#ContactUs">Contact Us</a></li>
+            
          </ul>
          <a href="#" class="button">Sign In</a>
       </header>

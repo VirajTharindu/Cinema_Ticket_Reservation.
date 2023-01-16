@@ -37,13 +37,13 @@
     
                    <!-- Navbar -->
     <header>
-      <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
+      <a href="http://localhost:8080/ABC_Cinema/home/home.jsp" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
 
          <div class="bx bx-menu" id="menu-icon"></div>
          <ul class="navbar">
             <li><a href="/../ABC_Cinema/home/home.jsp" class="home-active">Home</a></li>
-           <li><a href="#AboutUs">About Us</a></li>
-            <li><a href="#ContactUs">Contact Us</a></li>
+           <li><a href="../../aboutus.jsp">About Us</a></li>
+            
             <li style="background-color: orange; padding: 5px;border-radius: 5px;"><a href="../../user_review/review.jsp"><i class='bx bxs-star bx-flashing' ></i> Review</a></li>
          </ul>
          <a href="http://localhost:8080/ABC_Cinema/register/login.jsp" class="button">Sign In</a>     
@@ -66,7 +66,7 @@
             </h1>
             <h3 class="genre">Action | Adventure | Thriller</h3>
             <br />
-            <a href="#" class="button">Book Now</a>
+            <a href="../../bookings/book.jsp" class="button">Book Now</a>
           </div>
         </div>
         <div class="swiper-slide container">
@@ -75,7 +75,7 @@
     
           <img src="images/salaar.jpg" alt=""/>
           
-          <a href="#" class="button-secondslide">Book Now</a>
+          <a href="../../bookings/book.jsp" class="button-secondslide">Book Now</a>
         </div>
         <a href="https://youtu.be/qJ8tXs0dmZk" class="play">
           <i class="bx bx-play"></i>
@@ -219,8 +219,7 @@
 
     <!-- Footer -->
     <section class="footer">
-      <a href="#" class="logo"> </i> Terms & Conditions </a>
-      <a href="#" class="logo"> </i> Privacy & Policy </a>
+  <a hret="#" class="logo"> <i class="bx bxs-movie"></i> ABC Cinema </a>    
       
       <div class="social">
         <a href="#"><i class="bx bxl-facebook"></i></a>

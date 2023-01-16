@@ -29,13 +29,13 @@
    <body>
       <!-- Navbar -->
       <header>
-         <a href="" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
+         <a href="http://localhost:8080/ABC_Cinema/home/home.jsp" class="logo"> <i class="bx bxs-movie"></i>ABC Cinema </a>
 
          <div class="bx bx-menu" id="menu-icon"></div>
          <ul class="navbar">
             <li><a href="/../ABC_Cinema/home/home.jsp" class="home-active">Movies</a></li>
-           <li><a href="#AboutUs">About Us</a></li>
-            <li><a href="#ContactUs">Contact Us</a></li>
+           <li><a href="../../aboutus.jsp">About Us</a></li>
+            
             <li style="background-color: orange; padding: 5px;border-radius: 5px;"><a href="../../user_review/review.jsp"><i class='bx bxs-star bx-flashing' ></i> Review</a></li>
          </ul>
          <a href="http://localhost:8080/ABC_Cinema/register/login.jsp" class="button">Sign In</a>
@@ -53,7 +53,7 @@
                   <h1>Pathaan</h1>
                   <h3 class="genre">Action | Adventure | Thriller</h3>
                   <br />
-                  <a href="#" class="button">Book Now</a>
+                  <a href="../../bookings/book.jsp" class="button">Book Now</a>
                </div>
             </div>
             <div class="swiper-slide container">
@@ -63,7 +63,7 @@
                   srcset=""
                   id="second-slide"
                   />
-               <a href="#" class="button-secondslide">Book Now</a>
+               <a href="../../bookings/book.jsp" class="button-secondslide">Book Now</a>
             </div>
             <a href="" class="play">
                <i class="bx bx-play"></i>
@@ -192,7 +192,9 @@
       </section>
 
       <div class="youtube-player-overlay active">
-         <div class="youtube-player-popup"></div>
+         <div class="youtube-player-popup">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vqu4z34wENw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+         </div>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

@@ -1,15 +1,18 @@
+<%@page import="java.io.PrintWriter"%>
+<%@page import="java.sql.SQLException"%>
 <%@page import="java.sql.PreparedStatement"%>
 <%@page import="java.sql.ResultSet"%>
 <%@page import="com.abc.dbconnector.ConnectionProvider"%>
 <%@page import="java.sql.Statement"%>
 <%@page import="java.sql.Connection"%>
 <%
-   if (session.getAttribute("name") == null){
+   if (session.getAttribute("pwd") == null){
       response.sendRedirect("http://localhost:8080/ABC_Cinema/register/login.jsp");
    }
 %>
 
 <%
+   PrintWriter output = response.getWriter();
    Connection con = ConnectionProvider.getCon();
    Statement st = con.createStatement();
    String uid = (String)session.getAttribute("id");
@@ -17,6 +20,14 @@
    String upwd = (String)session.getAttribute("pwd");
    String uname = (String)session.getAttribute("name"); 
    String umobile = (String)session.getAttribute("mobile");
+   
+   con = ConnectionProvider.getCon();
+   PreparedStatement pst = con.prepareStatement("SELECT * FROM bookings WHERE email = (SELECT uemail FROM users WHERE uemail = ?)");
+   pst.setString(1, uemail);
+   ResultSet rs = pst.executeQuery();
+//   output.print(uemail);
+   
+//   output.print(seat);
 %>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -134,37 +145,25 @@
             
       <table id="t01" class="center">
   <tr>
-    <th>Movie Number</th>
-    <th>Movie Name</th>		
+<!--    <th>Movie Number</th>
+    <th>Movie Name</th>		-->
     <th>Show Time</th>
     <th>Seat Num</th>
     <th>Ticket Price</th>
   </tr>
+  <% 
+        while(rs.next()){ 
+     %>
   <tr>
-    <td><%=request.getParameter("movienum")%></td>
-    <td><%=request.getParameter("moviename")%></td>		
-    <td><%=request.getParameter("time")%></td>
-    <td><%=request.getParameter("seat")%></td>
-    <td><%=request.getParameter("seat")%></td>
-    
-    
+     
+
+    <td><%= rs.getString("date") %></td>
+    <td><%= rs.getString("seat") %></td>
+
   </tr>
-  <tr>
-    <td><%=request.getParameter("movienum")%></td>
-    <td><%=request.getParameter("moviename")%></td>		
-    <td><%=request.getParameter("time")%></td>
-    <td><%=request.getParameter("seat")%></td>
-    <td><%=request.getParameter("seat")%></td>
-    
-  </tr>
-  <tr>
-    <td><%=request.getParameter("movienum")%></td>
-    <td><%=request.getParameter("moviename")%></td>		
-    <td><%=request.getParameter("time")%></td>
-    <td><%=request.getParameter("seat")%></td>
-    <td><%=request.getParameter("seat")%></td>
-    
-  </tr>
+  <%
+   }
+%>
 </table>      
             
                         <br>
